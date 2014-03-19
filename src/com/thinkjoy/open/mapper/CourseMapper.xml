@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.thinkjoy.open.mapper.CourseMapper">
+
+	<select id="selectAll" resultType="Course">
+		select * from course order by
+		courseId asc
+	</select>
+
+	<select id="selectById" parameterType="java.lang.String" resultType="Course">
+		select * from course where
+		courseId=#{courseId}
+	</select>
+
+	<select id="selectByStudentIdAndCourseId" parameterType="Sc" resultType="Sc">
+		select * from sc where
+		courseId=#{courseId} and studentId = #{studentId}
+	</select>
+
+	<insert id="insert" parameterType="Course">
+		insert into
+		course(courseId, name, teacher)
+		values(#{courseId}, #{name},
+		#{teacher})
+	</insert>
+
+	<delete id="delete" parameterType="java.lang.String">
+		delete from course where
+		courseId = #{courseId}
+	</delete>
+
+	<update id="update" parameterType="Course">
+		update course set
+		name=#{name},
+		teacher=#{teacher}
+		where courseId=#{courseId}
+	</update>
+
+	<insert id="takeCourse" parameterType="Sc">
+		insert into
+		sc(scId, studentId,courseId)
+		values(#{scId},#{studentId},#{courseId})
+	</insert>
+
+	<delete id="untakeCourse" parameterType="Sc">
+		delete from sc where studentId=#{studentId} and courseId=#{courseId}
+	</delete>
+
+</mapper>

@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+body,td,th {
+	font-size: 14px;
+}
+
+textarea {
+	outline: none;
+}
+
+input {
+	outline: none; border: 1px solid #459CC4;
+	padding-left: 1px;
+}
+
+input:hover {
+	border: 1px solid #0000FF;
+}
+
+select {
+	outline: none; margin-left: 0;
+}

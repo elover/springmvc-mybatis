@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+.mainTable {
+	width: 98%; border: 0px solid #459CC4;
+}
+
+.mainTable td {
+	vertical-align: top;
+}
+
+.ulList {
+	list-style-type: none; border: 1px #459CC4 solid; margin-top: 7px; margin-right: 1em; margin-left: 0; padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.ulList li {
+	line-height: 180%; padding-left: 0;
+}

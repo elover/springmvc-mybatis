@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+.fieldset {
+	width: 95%; border-radius: 0px; border: 1px #459CC4 solid; padding-left: 10px; padding-bottom: 1em; margin-bottom: 1em;
+}
+
+.fieldset legend {
+	margin-left: 15px; color: #0099FF; font-weight: bold;
+}
+
+.tableForm {
+	border-collapse: collapse; width: 99%;
+}
+
+.tableForm tr {
+	border: 1px #459CC4 dashed; border-left: none; border-right: none;
+}
+
+.tableForm th {
+	padding: 10px 4px; border: 0px #459CC4 solid; border-left: none; border-right: none;
+	/*	background: #CAE3EE; */ margin: 0; width: 120px; text-align: left; padding-left: 10px;
+}
+
+.tableForm td {
+	padding: 3px 4px; border: 0px #459CC4 solid; border-left: none; border-right: none; margin: 0; line-height: 160%;
+}
+
+.tableList {
+	border-collapse: collapse; width: 99%;
+}
+
+.tableList tr {
+	
+}
+
+.tableList tr:hover {
+	background-color: #EEFFEE;
+}
+
+.tableList th {
+	padding: 4px 5px; border: 1px #D6E9F2 solid; background: #EEEEFF; margin: 0;
+}
+
+.tableList td {
+	padding: 4px 5px; border: 1px #D6E9F2 solid; margin: 0;
+}
+
+.btn {
+	padding: 3px 8px; border: 1px #459CC4 solid; background-color: #D6E9F2; border-radius: 0px;
+}
+
+.btn:hover {
+	border: 1px #0099FF solid; background-color: #AFD9ED;
+}

@@ -31,8 +31,8 @@
 	</bean>
 
 	<!-- enable component scanning (beware that this does not enable mapper scanning!) -->
-	<context:component-scan base-package="com.thinkjoy.open.service"/>
-	<context:component-scan base-package="com.thinkjoy.open.task"/>
+	<context:component-scan base-package="com.xilou.open.service"/>
+	<context:component-scan base-package="com.xilou.open.task"/>
 
 	<!-- enable autowire -->
 	<context:annotation-config/>
@@ -44,12 +44,12 @@
 	<!-- define the SqlSessionFactory -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>
-		<property name="typeAliasesPackage" value="com.thinkjoy.open.domain"/>
+		<property name="typeAliasesPackage" value="com.xilou.open.domain"/>
 	</bean>
 
 	<!-- scan for mappers and let them be autowired -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.thinkjoy.open.mapper"/>
+		<property name="basePackage" value="com.xilou.open.mapper"/>
 	</bean>
 
 	<task:executor id="executor" pool-size="5"/>

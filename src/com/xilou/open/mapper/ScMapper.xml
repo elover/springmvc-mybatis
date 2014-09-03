@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xilou.open.mapper.ScMapper">
+
+	<select id="selectCourseByStudentId" resultType="Course" parameterType="java.lang.String">
+		select c.cid, c.cname from c where c.cid
+		in
+		(select c.cid from sc where sc.sid=
+		(select s.sid from s where s.sid=#{studentId})
+		)
+	</select>
+
+	<select id="selectAll" resultType="Sc">
+		select sc.scId,sc.studentId,sc.courseId, c.name as "course.name",s.name as
+		"student.name" from sc,
+		student s, course c
+		where sc.studentId = s.studentId and sc.courseId = c.courseId
+	</select>
+
+</mapper>

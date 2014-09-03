@@ -7,17 +7,17 @@
 
 	<!-- Maps '/' requests to the 'home' view -->
 	<mvc:view-controller path="/index" view-name="index"/>
-	<context:component-scan base-package="com.thinkjoy.open.web.controller"/>
+	<context:component-scan base-package="com.xilou.open.web.controller"/>
 
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/student/**"/>
 			<mvc:mapping path="/courses"/>
-			<bean class="com.thinkjoy.open.web.interceptor.LoginInterceptor"/>
+			<bean class="com.xilou.open.web.interceptor.LoginInterceptor"/>
 		</mvc:interceptor>
 		<mvc:interceptor>
 			<mvc:mapping path="/console/**"/>
-			<bean class="com.thinkjoy.open.web.interceptor.ConsoleInterceptor">
+			<bean class="com.xilou.open.web.interceptor.ConsoleInterceptor">
 				<property name="excludeURIs">
 					<list>
 						<value>/console</value>

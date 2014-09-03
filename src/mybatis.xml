@@ -2,9 +2,9 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <!--<configuration>-->
 	<!--<typeAliases>-->
-		<!--<typeAlias type="com.thinkjoy.open.domain.Student" alias="Student" />-->
-		<!--<typeAlias type="com.thinkjoy.open.domain.Course" alias="Course" />-->
-		<!--<typeAlias type="com.thinkjoy.open.domain.Sc" alias="Sc" />-->
+		<!--<typeAlias type="com.xilou.open.domain.Student" alias="Student" />-->
+		<!--<typeAlias type="com.xilou.open.domain.Course" alias="Course" />-->
+		<!--<typeAlias type="com.xilou.open.domain.Sc" alias="Sc" />-->
 	<!--</typeAliases>-->
 	<!--<environments default="development">-->
 		<!--<environment id="development">-->
@@ -18,7 +18,7 @@
 		<!--</environment>-->
 	<!--</environments>-->
 	<!--<mappers>-->
-		<!--<mapper resource="com/thinkjoy/open/mapper/StudentMapper.xml" />-->
-		<!--<mapper resource="com/thinkjoy/open/mapper/CourseMapper.xml" />-->
+		<!--<mapper resource="com/xilou/open/mapper/StudentMapper.xml" />-->
+		<!--<mapper resource="com/xilou/open/mapper/CourseMapper.xml" />-->
 	<!--</mappers>-->
 <!--</configuration>-->
